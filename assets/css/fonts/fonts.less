@@ -1,0 +1,31 @@
+/*http://chimir.ru/post/39:
+@font-face mixin.Пример использования:
+@family: имя шрифта (обязательно).
+@filename: название шрифта, так же используется в качестве id для шрифта в формате svg
+(обязательно, по умолчанию используется имя шрифта).
+@weight: жирность шрифта (не обязательно, по умолчанию normal).
+@style: стиль шрифта (не обязательно, по умолчанию normal).
+
+.font-face(Roboto Slab, RobotoSlab-Bold, bold);                           
+
+*/
+.font-face(@family, @filename: @family, @weight: normal, @style: normal){
+@font-face{
+        font-family: @family;
+        src:url('@{filename}.eot');
+        src:url('@{filename}.eot?#iefix') format('embedded-opentype'),
+                url('@{filename}.woff') format('woff'),
+                url('@{filename}.ttf') format('truetype'),
+                url('@{filename}.svg#@{filename}') format('svg');
+        font-weight: @weight;
+        font-style: @style;
+    }
+}
+
+.font-face(Arabic, Arabic);
+.font-face('FK Aladdin', 'FKAladdin');
+
+
+
+
+
