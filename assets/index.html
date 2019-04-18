@@ -7,7 +7,7 @@
 <!--<![endif]-->
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
+
 
     <meta name="author" content="Alibekov Khiyirbeg">
     <meta name="keywords" content="HTML design by maker Alibekov Khiyirbeg Sultangamidovich">
@@ -18,6 +18,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+     <link rel="stylesheet" href="css/style.css">
 
     <title>Portfolio</title>
 
@@ -50,13 +51,13 @@
 <div class="loader">
   <div class="loader_inner"></div>
 </div>
-<header class="header" data-parallax="scroll" data-image-src="i/bg.jpg" data-z-index="1">
+<header class="header" data-parallax="scroll" data-position="top center" data-image-src="i/bg.jpg" data-z-index="2">
   <div class="wrapper">
     <div class="header__wrap">
       <div class="logo">
         <a href="#" class="logo__link">
           <svg class="svg-use-img logo__svg">
-            <use xlink:href="i/symbol/sprite.svg#logo"></use>
+            <use xlink:href="i/symbol/sprite.svg#7"></use>
           </svg>
           <!-- End logo__svg -->
         </a>
@@ -71,10 +72,10 @@
       </button>
       <nav class="top_mnu">
         <ul>
-          <li><a href="#about">Обо мне</a></li>
-          <li><a href="#resume">Резюме</a></li>
-          <li><a href="#portfolio">Портфолио</a></li>
-          <li><a href="#contacts">Контакты</a></li>
+          <li><a href="#js_about">Обо мне</a></li>
+          <li><a href="#js_resume">Резюме</a></li>
+          <li><a href="#js_portfolio">Портфолио</a></li>
+          <li><a href="#js_contacts">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -94,7 +95,7 @@
 <!-- End header -->
 
 <main class="main">
-  <section id="about" class="about s_light">
+  <section id="js_about" class="about s_light">
     <div class="wrapper">
       <header class="section__header">
         <h2 class="section__title">
@@ -106,14 +107,15 @@
       </header>
       <article class="about__wrap">
         <section class="about__item ">
-          <div class="about-block anim1">
+          <div class="about-block anim">
             <header class="about-block__heading">
               <h4 class="about-block__title">
                 Не много о себе
               </h4>
             </header>
             <div class="about-block__contents">
-              <p class="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dicta dolorum error ex, excepturi
+              <p class="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dicta dolorum error ex,
+                excepturi
                 explicabo laudantium maxime nemo obcaecati quae quam quasi quidem quod reiciendis sunt? Accusantium
                 maiores tempora vel.</p>
               <p>Ad eaque iste ullam velit! Consequuntur distinctio et fuga fugiat laboriosam libero magnam molestiae?
@@ -125,7 +127,7 @@
         </section>
         <!-- End about__item-1 -->
         <section class="about__item ">
-          <div class="about-block anim2">
+          <div class="about-block anim">
             <header class="about-block__heading">
               <h3 class="about-block__title">
                 Фото
@@ -140,7 +142,7 @@
         </section>
         <!-- End about__item-2 -->
         <section class="about__item">
-          <div class="about-block  anim3">
+          <div class="about-block  anim">
             <header class="about-block__heading">
               <h4 class="about-block__title">
                 Персональная информация
@@ -215,18 +217,102 @@
         </p>
       </header>
       <article class="resume__wrap">
-        <section class="resume__inner">
-
+        <section class="resume__inner left">
+          <div class="resume-block">
+            <header class="resume-block__heading">
+              <h4 class="resume-block__title">
+                Работа
+              </h4>
+            </header>
+            <div class="resume-block__icon">
+              <i class="fa fa-bank"></i>
+            </div>
+            <!-- // resume-block__icon -->
+            <div class="resume-block__contents">
+              <p>
+                <data>с 2008 года по настоящее время</data>
+              </p>
+              <p><span>ООО "Пронькина забава"</span>&nbsp;&nbsp;<strong>Программист</strong></p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusantium fugit illum nesciunt nostrum officiis omnis
+                quibusdam quod ratione, recusandae sequi sint vero?
+              </p>
+            </div>
+            <div class="resume-block__contents">
+              <p>
+                <data>с 2008 года по настоящее время</data>
+              </p>
+              <p><span>ООО "Пронькина забава"</span>&nbsp;&nbsp;<strong>Программист</strong></p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusantium fugit illum nesciunt nostrum officiis omnis
+                quibusdam quod ratione, recusandae sequi sint vero?
+              </p>
+            </div>
+            <div class="resume-block__contents">
+              <p>
+                <data>2004-2008</data>
+              </p>
+              <p><strong>Макеник</strong>&nbsp;&nbsp;<span>Шушенский сельхозколледж</span></p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusantium fugit illum nesciunt nostrum officiis omnis
+                quibusdam quod ratione, recusandae sequi sint vero?
+              </p>
+            </div>
+          </div>
+          <!-- // resume-block -->
         </section>
         <!-- End resume__inner-1 -->
-        <section class="resume__inner">
-
+        <section class="resume__inner right">
+          <div class="resume-block">
+            <header class="resume-block__heading">
+              <h4 class="resume-block__title">
+                Учеба
+              </h4>
+            </header>
+            <div class="resume-block__icon">
+              <i class="fa fa-book"></i>
+            </div>
+            <!-- // resume-block__icon -->
+            <div class="resume-block__contents">
+              <p>
+                <data>2004-2008</data>
+              </p>
+              <p><strong>Макеник</strong>&nbsp;&nbsp;<span>Шушенский сельхозколледж</span></p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusantium fugit illum nesciunt nostrum officiis omnis
+                quibusdam quod ratione, recusandae sequi sint vero?
+              </p>
+            </div>
+            <div class="resume-block__contents">
+              <p>
+                <data>2004-2008</data>
+              </p>
+              <p><strong>Макеник</strong>&nbsp;&nbsp;<span>Шушенский сельхозколледж</span></p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusantium fugit illum nesciunt nostrum officiis omnis
+                quibusdam quod ratione, recusandae sequi sint vero?
+              </p>
+            </div>
+            <div class="resume-block__contents">
+              <p>
+                <data>с 2008 года по настоящее время</data>
+              </p>
+              <p><span>ООО "Пронькина забава"</span>&nbsp;&nbsp;<strong>Программист</strong></p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusantium fugit illum nesciunt nostrum officiis omnis
+                quibusdam quod ratione, recusandae sequi sint vero?
+              </p>
+            </div>
+          </div>
+          <!-- // resume-block -->
         </section>
         <!-- End resume__inner-2 -->
-        <section class="resume__inner">
-
-        </section>
-        <!-- End resume__inner-3 -->
       </article>
     </div>
     <!-- //wrapper -->
@@ -242,29 +328,165 @@
           Мои последние работы
         </p>
       </header>
-      <article class="portfolio__wrap">
-        <section class="portfolio__inner">
-
-        </section>
-        <!-- End portfolio__inner-1 -->
-        <section class="portfolio__inner">
-
-        </section>
-        <!-- End portfolio__inner-2 -->
-        <section class="portfolio__inner">
-
-        </section>
-        <!-- End portfolio__inner-3 -->
-        <section class="portfolio__inner">
-
-        </section>
-        <!-- End portfolio__inner-4 -->
-      </article>
+      <div class="filter_div controls">
+        <ul>
+          <li class="filter active" data-filter="all">Все работы</li>
+          <li class="filter" data-filter=".category-1">Сайты</li>
+          <li class="filter" data-filter=".category-2">Айдентика</li>
+          <li class="filter" data-filter=".category-3">Логотипы</li>
+        </ul>
+      </div>
+      <div id="portfolio_grid" class="portfolio__wrap">
+        <div class="mix  portfolio_item category-1">
+          <img src="i/portfolio-images/1.jpg" alt="Alt" />
+          <div class="port_item_cont">
+            <h3>Заголовок работы</h3>
+            <p>Описание работы</p>
+            <a href="#" class="popup_content">Посмотреть</a>
+          </div>
+          <div class=" hidden">
+            <div class="podrt_descr">
+              <div class="modal-box-content">
+                <button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+                <h3>Заголовок работы</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                <img src="i/portfolio-images/1.jpg" alt="Alt" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mix  portfolio_item category-1">
+          <img src="i/portfolio-images/4.jpg" alt="Alt" />
+          <div class="port_item_cont">
+            <h3>Заголовок работы</h3>
+            <p>Описание работы</p>
+            <a href="#" class="popup_content">Посмотреть</a>
+          </div>
+          <div class=" hidden">
+            <div class="podrt_descr">
+              <div class="modal-box-content">
+                <button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+                <h3>Заголовок работы</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                <img src="i/portfolio-images/4.jpg" alt="Alt" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mix  portfolio_item category-1">
+          <img src="i/portfolio-images/2.jpg" alt="Alt" />
+          <div class="port_item_cont">
+            <h3>Заголовок работы</h3>
+            <p>Описание работы</p>
+            <a href="#" class="popup_content">Посмотреть</a>
+          </div>
+          <div class=" hidden">
+            <div class="podrt_descr">
+              <div class="modal-box-content">
+                <button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+                <h3>Заголовок работы</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                <img src="i/portfolio-images/2.jpg" alt="Alt" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mix  portfolio_item category-2">
+          <img src="i/portfolio-images/3.jpg" alt="Alt" />
+          <div class="port_item_cont">
+            <h3>Заголовок работы</h3>
+            <p>Описание работы</p>
+            <a href="#" class="popup_content">Посмотреть</a>
+          </div>
+          <div class=" hidden">
+            <div class="podrt_descr">
+              <div class="modal-box-content">
+                <button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+                <h3>Заголовок работы</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                <img src="i/portfolio-images/3.jpg" alt="Alt" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mix  portfolio_item category-2">
+          <img src="i/portfolio-images/4.jpg" alt="Alt" />
+          <div class="port_item_cont">
+            <h3>Заголовок работы</h3>
+            <p>Описание работы</p>
+            <a href="#" class="popup_content">Посмотреть</a>
+          </div>
+          <div class=" hidden">
+            <div class="podrt_descr">
+              <div class="modal-box-content">
+                <button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+                <h3>Заголовок работы</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                <img src="i/portfolio-images/4.jpg" alt="Alt" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mix  portfolio_item category-3">
+          <img src="i/portfolio-images/5.jpg" alt="Alt" />
+          <div class="port_item_cont">
+            <h3>Заголовок работы</h3>
+            <p>Описание работы</p>
+            <a href="#" class="popup_content">Посмотреть</a>
+          </div>
+          <div class=" hidden">
+            <div class="podrt_descr">
+              <div class="modal-box-content">
+                <button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+                <h3>Заголовок работы</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                <img src="i/portfolio-images/5.jpg" alt="Alt" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mix  portfolio_item category-3">
+          <img src="i/portfolio-images/6.jpg" alt="Alt" />
+          <div class="port_item_cont">
+            <h3>Заголовок работы</h3>
+            <p>Описание работы</p>
+            <a href="#" class="popup_content">Посмотреть</a>
+          </div>
+          <div class=" hidden">
+            <div class="podrt_descr">
+              <div class="modal-box-content">
+                <button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+                <h3>Заголовок работы</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                <img src="i/portfolio-images/6.jpg" alt="Alt" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mix  portfolio_item category-2">
+          <img src="i/portfolio-images/1.jpg" alt="Alt" />
+          <div class="port_item_cont">
+            <h3>Заголовок работы</h3>
+            <p>Описание работы</p>
+            <a href="#" class="popup_content">Посмотреть</a>
+          </div>
+          <div class=" hidden">
+            <div class="podrt_descr">
+              <div class="modal-box-content">
+                <button class="mfp-close" type="button" title="Закрыть (Esc)">×</button>
+                <h3>Заголовок работы</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+                <img src="i/portfolio-images/1.jpg" alt="Alt" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--//#portfolio_grid" .portfolio__wrap-->
     </div>
     <!-- //wrapper -->
   </section>
   <!-- End portfolio -->
-
   <section id="js_contacts" class="contacts s_light">
     <div class="wrapper">
       <header class="section__header">
@@ -275,23 +497,32 @@
           Оставьте ваше сообщения
         </p>
       </header>
+
       <article class="contacts__wrap">
         <section class="contacts__inner">
-
         </section>
         <!-- End contacts__inner-1 -->
         <section class="contacts__inner">
-
         </section>
         <!-- End contacts__inner-2 -->
         <section class="contacts__inner">
-
         </section>
         <!-- End contacts__inner-3 -->
         <section class="contacts__inner">
-
         </section>
         <!-- End contacts__inner-4 -->
+        <section class="contacts__inner">
+        </section>
+        <!-- End contacts__inner-5 -->
+        <section class="contacts__inner">
+        </section>
+        <!-- End contacts__inner-6 -->
+        <section class="contacts__inner">
+        </section>
+        <!-- End contacts__inner-7 -->
+        <section class="contacts__inner">
+        </section>
+        <!-- End contacts__inner-8 -->
       </article>
     </div>
     <!-- //wrapper -->
@@ -299,6 +530,7 @@
   <!-- End contacts -->
 </main>
 <!-- End main -->
+
 <footer class="footer s_dark">
   <div class="wrapper">
     <div class="footer__wrap">
@@ -341,7 +573,7 @@
     <script src="../../bower_components/respond/respond.min.js"></script>
 <![endif]-->
 
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
     <!-- Yandex.Metrika counter --><!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter25346996 = new Ya.Metrika({id:25346996, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
